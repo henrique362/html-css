@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Usando Links Externos!!</h1>
+    <!--PARA SE UTILIZAR LINKS EXTERNOS UTILIZA-SE A TAG <A>, QUE POSSUI O PARAMETRO HREF QUE É ONDE VOCÊ COLOCA O LINK QUE QUER ACESSAR -->
+    <p>Você pode acessar o site da Igreja Adventista do Sétimo Dia clicando <a href="https://www.adventistas.org/pt/" target="_blank" rel="nofollow">aqui</a></p>
+    <!--O PARAMETRO target="_blank" INDICA PRO NAVEGADOR QUE O CONTÉUDO DO LINK SERÁ ABERTO EM UMA NOVA ABA-->
+    <!--O PARAMETRO rel="external" INDICA PRO NAVEGADOR QUE O LINK É EXTERNO-->
+    <p>Você pode acessar o canal da Casa Publicadora Brasileira - editora que faz parte da <abbr title="Igreja Adventista do Sétimo Dia">IASD</abbr> clicando <a href="https://www.youtube.com/@casapublicadora" target="_blank" rel="external">aqui</a></p>
+    <h1>Usando links internos!!</h1>
+    <!--O PARAMETRO "rel" POSSUI VÁRIAS ATRIBUIÇÕES POR EXEMPLO: "nofollow" QUE INDICA AO NAVEGADOR QUE ESSA PÁGINA NAO DA AVAL AO LINK, USANDO PRINCIPALMENTE EM PROPAGANDAS, "next" INDICA AO NAVEGADOR QUE O LINK É A PRÓXIMA PÁGINA, "prev" INDICA AO NAVEGADOR QUE O LINK SE REFERE A PÁGINA ANTERIOR -->
+
+    <!--JÁ O PARAMETRO TARGET QUE FOI USADO NESSA PÁGINA "self" INDICA AO NAVEGADOR QUE O LINK PODE SER ABERTO NA PRÓPRIA PÁGINA-->
+    <p><a href="pag001.html" target="_self" rel="next">Ir para próxima página na mesma página</a></p>
+    <p>Você pode acessar meu primeiro exercício HTML clicando <a href="../ex001/index.html" target="_self" rel="next">aqui.</a></p>
+    <h1>Links para Downloads</h1>
+    <!--VOCÊ PODE ADICIONAR LINKS PARA DOWNLOADS ATRAVES DA TAG <A> DIRECIONANDO O CAMINHO DO ARQUIVO E ADICIONANDO PARAMETROS COMO "download" COMO NO EXEMPLO ABAIXO E TAMBEM ESPECIFICAR O TYPE BUSCANDO NO SITE DO IANA MEDIATYPES, ESSA FORMA DEPENDE DE COMO O NAVEGADOR VAI SE COMPORTAR-->
+    <p>Você pode baixar uma foto do planeta terra clicando <a href="image.jpg" download="image.jpg">aqui</a></p>
+    <p>Você pode baixar um ppt clicando <a href="ppt1.pptx"> aqui</a></p>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+                    /*
+            Tipos de format ()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded - opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+
+            faça download das fontes que deseja usar e use a regra font-face para configurar a fonte, normalmente é arquivo ttf e otf, CUIDADO COM AS VÍRGULAS E O NOME
+            */
+        @font-face {
+            font-family:'love';
+            src: url('lovemy.otf') format('opentype'), url('lovemy.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 7em;
+        }
+    </style>
+</head>
+<body>
+    <h1>TÍTULO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil incidunt eos debitis distinctio fugiat reiciendis, iure maxime quae nostrum dicta adipisci aut accusantium provident corporis perspiciatis consequatur est alias quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum quos sint deserunt labore nesciunt asperiores ex, odio neque nihil vitae maxime aperiam placeat, sequi laborum alias debitis architecto delectus!</p>
+</body>
+</html>

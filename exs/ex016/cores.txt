@@ -1,0 +1,9 @@
+PSICOLOGIA DAS CORES
+Todas as cores possui emoções que podem ser causadas ao ve-las, por exemplo o Amarelo geralmente remete a Alegria/Felicidade, já o Branco, remete a Pureza, Limpeza ou o Preto remete ao luto, a coisas sombrias, e por isso é importante ao escolher uma paleta de cores pro seu site, entender qual emoção a sua escolha vai causar
+CORES EM CSS 
+As cores podem ser adicionadas de várias formas em CSS:
+Por nome: background-color: white;
+Por Hexadecimal: background-color: #ffffff
+Por RGB - RED GRENN E YELLOW
+POR HSL
+

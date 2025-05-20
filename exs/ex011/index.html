@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <!--PARA CRIAR MÍDIAS (NO EXEMPLO ABAIXO IMAGENS) DINÂMICAS, UTILIZA-SE A TAG <PICTURE> E </PICTURE>. ATRAVÉS DO PARAMETRO <SOURCE media type> É POSSIVEL ESTIPULAR UMA LARGURA MÁXIMA (max-width:1000px, POR EXEMPLO.-->
+    <picture>
+        <source media="(max-width:750px )"srcset="img/300.jpg" type="image/jpg"> <!--NESTE CASO, A TRADUÇÃO DO CÓDIGO É A SEGUINTE: SE A LARGURA MÁXIMA É 750PX, TODAS AS TELAS QUE TIVEREM ESSA LARGURA MÁXIMA VÃO CARREGAR ESTA IMAGEM: img/300.jpg-->
+        <source media="(max-width:1050px )" srcset="img/700.jpg" type="image/jpg">
+        <!--É IMPORTANTE DESTACAR QUE A ORDEM PRA COLOCAR AS IMAGENS É SEMPRE DEIXANDO A MAIOR POR ULTIMO-->
+        <img src="img/1000.jpg" alt="#">
+    </picture>
+    <h1>Reproduzindo aúdios em HTML5</h1>
+    <p>Vamos aprender a reproduzir áudios em <abbr title="Linguagem de Marcação">HTML5</abbr></p>
+    <!--PRIMEIRA FORMA-->
+    <audio src="midias/Brilha Jesus.mp3" controls></audio>
+    <!--OS UNICOS FORMATOS QUE FUNCIONAM NESSE METODO SÃO: MP3, WAV, OGG-->
+    <!--SSEGUNDA FORMA-->
+    <audio preload="metadata" controls> <!--O PARAMETRO PRELOAD PODE SER USADO DE 3 FORMAS "AUTO", METADATA, E NONE CONSULTAR PDF PARA MEDIA TYPES-->
+        <!--PODE SE UTILIZAR O PARAMETRO SOURCE SRC DENTRO DA TAG AUDIO, O CODIGO VAI SER LIDO DE CIMA PRA BAIXO, NO CASO DO EXEMPLO ABAIXO O MP3 VAI SER CARREGADO PRIMEIRO, SE NENHUM CONSEGUIR CARREGAR ELE VAI MOSTRAR O PARAGRAFO-->
+        <source src="midias/Brilha Jesus.mp3" type="audio/mpeg">
+        <source src="midias/Brilha Jesus.wav" type="audio/wav">
+        <source src="midias/Brilha Jesus.ogg" type="audio/ogg">
+        <p>Não consegui encontrar o arquivo clique <a href="midias/Brilha Jesus.mp3">Aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>

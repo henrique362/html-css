@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmennte</h1>
+    <p>Esse vídeo esta hospendando no meu próprio servidor</p>
+    <!--A INSERÇÃO DE VÍDEOS FUNCIONA DO MESMO JEITO DA TAG AUDIO-->
+    <!--SE FOR FEITO DESSA FORMA COLOCOQUE VIDEOS DE TAMANHO O MINIMO POSSIVEL E O MAXIMO DE FORMATO POSSIVEL-->
+    <!--PARA COLOCAR THUMB NO VIDEO UTILIZA-SE O PARAMETRO POSTER-->
+    <video src="midias/laranja.mp4" width="500px" controls preload="metadata" poster="../../img/biblia/biblia-full.jpg"></video>
+    <p>Video</p>
+    <video width="500px" controls preload="metadata">
+        <source src="midias/laranja.mp4" type="video/mp4">
+    </video>
+    <h1>Inserido vídeos do Youtube</h1>
+    <!--PARA INSERIR VIDEOS DO YOUTUBE BASTA USAR A OPÇÃO INCORPORAR E COLCAR NO CODIGO, SEMPRE TER CUIDADO COM DIREITOS AUTORAIS-->
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=OVKBk9mya2HviHde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

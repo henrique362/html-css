@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!--PARA CRIAR LISTAS ORDENADAS UTILIZA-SE A TAG <OL> E </OL>, ADICIONAR UM ITEM DE LISTA UTILIZA-SE O PARAMETRO <LI>-->
+
+    <!--SE VOCê QUISER MUDAR O TIPO DE LISTA TEM 5 OPÇÕES "1 (Numérico), A (Alfabeto - Maiusculo), a (Alfabeto Minusculo), I (Numeros Romanos Maiusculo), i (Numeros Romanos Minusculo)", E PODE ALTERA-LOS ATRAVES DO PARAMETRO "TYPE", INCLUSIVE EM QUAL CARACTERE  COMEÇARA ATRAVES DO PARAMETRO "START - Que só entende números rsrsr"-->
+
+    <ol type="a" start="6">
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Estudar</li>
+        <li>Trabalhar</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <!--LISTAS NÃO ORDENADAS PODEM SER FEITAS ATRAVES DA TAG <UL> E </UL>-->
+    <!--O PARAMETRO <LI> TAMBEM É USADO PARA LISTAR ITEMS NESSE TIPO DE LISTAS-->
+    <!--O PARAMETRO TYPE TEM TRES VARIAÇÕES : "disc", "circle", "square"-->
+    <!--VOCÊ PODE FAZER LISTAS MISTAS ANINHANDO OL'S DENTRO DE UL'S OU VICE VERSA EXEMPLO ABAIXO NO ITEM ESTUDAR:-->
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Tomar Café</li>
+        <li>Estudar</li>
+        <ul type="circle">
+            <li>Programação</li>
+            <li>ENEM</li>
+            <li>CONCURSOS</li>
+        </ul>
+        <li>Trabalhar</li>
+    </ol>
+    <h2>Listas de Definição</h2>
+    <!--PARA SE CRIAR LISTAS DEFINIÇÃO UTILIZA-SE A TAG <DL> </DL>-->
+    <!--O PARAMETRO UTILIZADO PARA LISTAR ITENS É O <DT> E PARA ATRIBUIR SIGNIFICADO AOS ITENS É O <DD>-->
+    <dl>
+        <dt>IASD</dt>
+        <dd>Igreja Adventista do Sétimo Dia</dd>
+        <dt>DESBRAVADORES</dt>
+        <dd>Instituição da <abbr title="Igreja Adventista do Sétimo Dia">IASD</abbr> que é responsável pela educação das crianças nos princípios do Reino.</dd>
+    </dl>
+</body>
+</html>
